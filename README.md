@@ -3,10 +3,13 @@
 Para essa PoC, usei o Vault Cloud rodando em um container Docker. E para a aplicação, usei um script python+flask somente para exibir os valores.
 
 
-
 >**OBS.:**
 >
 >Tem outros [vault-examples](https://github.com/hashicorp/vault-examples) com outras liguagens de programações como Go, Ruby, C#, Python e Java (Spring).
+
+
+![Vault com VPC-Perring](https://github.com/roanfranklin/docker-vault/raw/main/imagens/Vault-Cloud.jpg)
+
 
 ---
 
