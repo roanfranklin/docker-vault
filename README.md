@@ -8,8 +8,15 @@ Para essa PoC, usei o Vault Cloud rodando em um container Docker. E para a aplic
 >Tem outros [vault-examples](https://github.com/hashicorp/vault-examples) com outras liguagens de programações como Go, Ruby, C#, Python e Java (Spring).
 
 
-![Vault com VPC-Perring](https://github.com/roanfranklin/docker-vault/raw/main/imagens/Vault-Cloud.jpg)
+---
 
+### Vault com VPC Peering
+
+O teste está sendo realizado localmente, mas as credenciais do Vault poderiam estar em outro ambiente, região ou até mesmo em outro Provider Cloud ou On-premise.
+
+![Vault com VPC-Peering](https://github.com/roanfranklin/docker-vault/raw/main/imagens/Vault-Cloud.jpg)
+
+A própria HashiCorp tem o [Vault Cloud Plataform](https://cloud.hashicorp.com/products/vault) que é interface administrativa em seu ambiente. Assim não precisamos da complexidade e a sobrecarga de gerenciar o Vault Cloud por conta própria.
 
 ---
 
@@ -127,3 +134,4 @@ vault kv put secret/webapp \
 Fontes:
 - https://www.vaultproject.io/docs/get-started/developer-qs
 - https://github.com/hashicorp/vault-examples
+- https://cloud.hashicorp.com/products/vault
