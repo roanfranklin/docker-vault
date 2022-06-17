@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  webapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: webapp
+    ports:
+      - 5000:5000
+    environment:
+      - FLASK_ENV=prodution
+      - FLASK_APP=webapp
+      # - VAULT_URL=http://192.168.26.13:8200
+      # - VAULT_TOKEN=74cc1c60799e0a786ac7094b532f01b1
+    env_file:
+      - .env

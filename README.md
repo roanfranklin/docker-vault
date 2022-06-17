@@ -129,6 +129,10 @@ vault kv put secret/webapp \
              password=sup4s3cr3t
 ```
 
+>**OBS.:**
+>
+>Neste exemplo tem o *.env*, mas esse token é de uso no ambiente de teste.
+
 ---
 
 Fontes:
